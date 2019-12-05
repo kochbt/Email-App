@@ -66,5 +66,10 @@ class Email{
     public String generatePassword(){
         return ;
     }
+
+    public String generateEmail(String firstName, String lastName, String department, String company){
+        String emailAddress = firstName + "." + lastName + "@" + department + "." + company + ".com";
+        return emailAddress;
+    }
 }
 
